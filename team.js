@@ -1,4 +1,4 @@
-let myArray =
+let Fabrizio =
 [
     {
 name:"Fabrizio",
