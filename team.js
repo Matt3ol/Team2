@@ -1,5 +1,4 @@
-let myArray =
-    [ 
+let myArray = [ 
     { name : "Matteo",
         surname :"Leacche",
         age : "25",
@@ -58,9 +57,16 @@ let myArray =
         favoriteFood:"pizza",
         favoriteBook:"padre ricco padre povero",
         petName:"Nino"
-    }
+    },
+          {
+        name: "Matteo",
+        surname: "Shurdhaqi",
+        age: 22,
+        city: "Frosolone",
+        hobby: "",
+        petNam: "Attila",
+          }
 
   
 ];
-
 
