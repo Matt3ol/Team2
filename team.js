@@ -73,3 +73,38 @@ let myArray = [
     petName: "Attila",
   },
 ];
+
+
+function findDuplicateNames(arr){
+  const names = [];
+  const duplicateNames = [];
+
+  for(const obj of arr){
+    const name = obj.name;
+    names.includes(name) && !duplicateNames.includes(name) ? duplicateNames.push(name) : names.push(name);
+  }
+
+  if(duplicateNames.length > 0){
+    return duplicateNames;
+  }else{
+    return 'Non ci sono nomi doppi';
+  }
+
+}
+
+
+
+
+// console.log(findDuplicateNames(myArray));
+
+function findOwnerPet(arr){
+  const ris = arr.map((obj)=> ({
+    nomePadrone: obj.name,
+    nomeAnimale: obj.petName
+  }))
+
+  console.log(ris);
+}
+
+findOwnerPet(myArray);
+
