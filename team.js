@@ -1,5 +1,18 @@
-let Fabrizio =[
- {
+let myArray =
+    [ 
+    { name : "Matteo",
+        surname :"Leacche",
+        age : "25",
+        city : "Roma",
+        hobby : "calcio",
+        favoriteFood : "pizza",
+        favoriteVideoGame : "fifa",
+        favoriteFilm : "hateful eight",
+        favoriteBook : "il sentiero dei nidi di ragno",
+        petName : "nala",
+         
+    },
+  {
    name:"Fabrizio",
    surname: "Pala",
    age: "29",
@@ -11,4 +24,5 @@ let Fabrizio =[
    favoriteBook:"IT",
    petName:"haru",
  }
-]
+];
+
