@@ -73,3 +73,20 @@ let myArray = [
     petName: "Attila",
   },
 ];
+function alphabeticOrder(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[i].surname > array[j].surname) {
+                let temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+}
+
+alphabeticOrder(myArray);
+
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i].surname);
+}
