@@ -1,17 +1,16 @@
-let myArray =
-    [ 
-    { name : "Matteo",
-        surname :"Leacche",
-        age : "25",
-        city : "Roma",
-        hobby : "calcio",
-        favoriteFood : "pizza",
-        favoriteVideoGame : "fifa",
-        favoriteFilm : "hateful eight",
-        favoriteBook : "il sentiero dei nidi di ragno",
-        petName : "nala",
-         
-    },
+let myArray = [
+  {
+    name: "Matteo",
+    surname: "Leacche",
+    age: "25",
+    city: "Roma",
+    hobby: "calcio",
+    favoriteFood: "pizza",
+    favoriteVideoGame: "fifa",
+    favoriteFilm: "hateful eight",
+    favoriteBook: "il sentiero dei nidi di ragno",
+    petName: "nala",
+  },
   {
     name: "Fabrizio",
     surname: "Pala",
@@ -31,10 +30,10 @@ let myArray =
     age: 26,
     city: "Ravenna",
     hobby: "fotografia",
-    favFood: "",
-    favVideogame: "",
-    favFilm: "",
-    favBook: "",
+    favouriteFood: "",
+    favouriteVideogame: "",
+    favouriteFilm: "",
+    favouriteBook: "",
     petNam: "Dior",
   },
   {
@@ -43,10 +42,10 @@ let myArray =
     age: 21,
     city: "Roma",
     hobby: "e-Sport",
-    favFood: "Sushi",
-    favVideogame: "Jak and Dexter",
-    favFilm: "Wiplash",
-    favBook: "Uno studio in rosso",
+    favouriteFood: "Sushi",
+    favouriteVideogame: "Jak and Dexter",
+    favouriteFilm: "Wiplash",
+    favouriteBook: "Uno studio in rosso",
     petNam: "",
   },
   {
@@ -56,6 +55,8 @@ let myArray =
     city: "Licata",
     hobby: "play the guitar",
     favoriteFood: "pizza",
+    favoriteVideoGame:"GTA",
+    favoriteFilm:"Titanic",
     favoriteBook: "padre ricco padre povero",
     petName: "Nino",
   },
@@ -70,14 +71,5 @@ let myArray =
     favoriteFilm: "Pulp Fiction",
     favoriteBook: "C++",
     petName: "Attila",
-
-    }
+  },
 ];
-
-    
-        
-
-
-
-
-
