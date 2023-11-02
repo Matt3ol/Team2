@@ -2,7 +2,7 @@ let myArray = [
   {
     name: "Matteo",
     surname: "Leacche",
-    age: "25",
+    age: 25,
     city: "Roma",
     hobby: "calcio",
     favoriteFood: "pizza",
@@ -14,7 +14,7 @@ let myArray = [
   {
     name: "Fabrizio",
     surname: "Pala",
-    age: "29",
+    age: 29,
     city: "Torino",
     hobby: "Anime",
     favoriteFood: "Pollo fritto",
@@ -63,7 +63,7 @@ let myArray = [
   {
     name: "Matteo",
     surname: "Shurdhaqi",
-    age: "22",
+    age: 22,
     city: "Roma",
     hobby: "coding",
     favoriteFood: "pasta arrabbiata",
