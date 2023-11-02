@@ -34,7 +34,7 @@ let myArray = [
     favouriteVideogame: "",
     favouriteFilm: "",
     favouriteBook: "",
-    petNam: "Dior",
+    petName: "Dior",
   },
   {
     name: "Raul",
@@ -46,7 +46,7 @@ let myArray = [
     favouriteVideogame: "Jak and Dexter",
     favouriteFilm: "Wiplash",
     favouriteBook: "Uno studio in rosso",
-    petNam: "",
+    petName: "",
   },
   {
     name: "Salvatore",
@@ -73,3 +73,24 @@ let myArray = [
     petName: "Attila",
   },
 ];
+
+// function findOwnerPet(arr){
+//   let risultato = arr.map ((obj)=>({
+//     nomePadrone : obj.name,
+//     nomeAnimale : obj.petName
+//   }))
+//   console.log(risultato)
+// }
+// findOwnerPet ( myArray)
+
+function findOwnerPet (arr){
+  for (let i = 0;i<arr.length;i++){
+  let obj = arr[i];
+  if (obj.name && obj.petName){
+    console.log(obj.name,obj.petName)
+  }
+  }
+
+}
+
+findOwnerPet (myArray)
