@@ -55,8 +55,8 @@ let myArray = [
     city: "Licata",
     hobby: "play the guitar",
     favoriteFood: "pizza",
-    favoriteVideoGame:"GTA",
-    favoriteFilm:"Titanic",
+    favoriteVideoGame: "GTA",
+    favoriteFilm: "Titanic",
     favoriteBook: "padre ricco padre povero",
     petName: "Nino",
   },
@@ -73,3 +73,16 @@ let myArray = [
     petName: "Attila",
   },
 ];
+
+function playerLOL(myArray) {
+  for (let i = 0; i < myArray.length; i++) {
+    let membri = myArray[i];
+    if (
+      membri.favoriteVideoGame === "LOL" ||
+      membri.favoriteVideoGame === "League Of Legends"
+    ) {
+      console.log(membri.name);
+    }
+  }
+}
+playerLOL (myArray)
