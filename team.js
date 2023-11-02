@@ -9,4 +9,5 @@ let myArray =
         favoriteFilm : "hateful eight",
         favoriteBook : "il sentiero dei nidi di ragno",
         petName : "nala",
+         
         }];
