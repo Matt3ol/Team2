@@ -1,5 +1,6 @@
 let myArray =
-    [{ name : "Matteo",
+    [ 
+    { name : "Matteo",
         surname :"Leacche",
         age : "25",
         city : "Roma",
@@ -10,4 +11,18 @@ let myArray =
         favoriteBook : "il sentiero dei nidi di ragno",
         petName : "nala",
          
-        }];
+    },
+  {
+   name:"Fabrizio",
+   surname: "Pala",
+   age: "29",
+   city:"Torino",
+   hobby:"Anime",
+   favoriteFood:"Pollo fritto",
+   favoriteVideoGame:"Skyrim",
+   favoriteFilm:"Forrest Gump",
+   favoriteBook:"IT",
+   petName:"haru",
+ }
+];
+
