@@ -43,7 +43,7 @@ let myArray = [
     city: "Roma",
     hobby: "e-Sport",
     favoriteFood: "Sushi",
-    favoriteVideogame: "LOL",
+    favoriteVideogame: "Jak and Dexter",
     favoriteFilm: "Wiplash",
     favoriteBook: "Uno studio in rosso",
     petName: "",
