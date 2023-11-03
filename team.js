@@ -74,6 +74,26 @@ let myArray = [
   },
 ];
 
+// feature Matteo S.
+function findDuplicateNames(arr){
+  const names = [];
+  const duplicateNames = [];
+
+  for(const obj of arr){
+    const name = obj.name;
+    names.includes(name) && !duplicateNames.includes(name) ? duplicateNames.push(name) : names.push(name);
+  }
+
+  if(duplicateNames.length > 0){
+    return duplicateNames;
+  }else{
+    return 'Non ci sono nomi doppi';
+  }
+
+}
+
+ console.log(findDuplicateNames(myArray));
+
 // feature Matteo L.
 function findOwnerPet (arr){
   for (let i = 0;i<arr.length;i++){
@@ -125,5 +145,6 @@ function etaMedia(myArray) {
 
 const media = etaMedia(myArray);
 console.log(media);
+
 
 
