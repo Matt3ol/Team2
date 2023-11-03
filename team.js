@@ -30,11 +30,11 @@ let myArray = [
     age: 26,
     city: "Ravenna",
     hobby: "fotografia",
-    favouriteFood: "",
-    favouriteVideogame: "",
-    favouriteFilm: "",
-    favouriteBook: "",
-    petNam: "Dior",
+    favoriteFood: "",
+    favoriteVideogame: "",
+    favoriteFilm: "",
+    favoriteBook: "",
+    petName: "Dior",
   },
   {
     name: "Raul",
@@ -42,11 +42,11 @@ let myArray = [
     age: 21,
     city: "Roma",
     hobby: "e-Sport",
-    favouriteFood: "Sushi",
-    favouriteVideogame: "Jak and Dexter",
-    favouriteFilm: "Wiplash",
-    favouriteBook: "Uno studio in rosso",
-    petNam: "",
+    favoriteFood: "Sushi",
+    favoriteVideogame: "Jak and Dexter",
+    favoriteFilm: "Wiplash",
+    favoriteBook: "Uno studio in rosso",
+    petName: "",
   },
   {
     name: "Salvatore",
@@ -55,8 +55,8 @@ let myArray = [
     city: "Licata",
     hobby: "play the guitar",
     favoriteFood: "pizza",
-    favoriteVideoGame:"GTA",
-    favoriteFilm:"Titanic",
+    favoriteVideoGame: "GTA",
+    favoriteFilm: "Titanic",
     favoriteBook: "padre ricco padre povero",
     petName: "Nino",
   },
@@ -73,3 +73,15 @@ let myArray = [
     petName: "Attila",
   },
 ];
+
+function etaMedia(myArray) {
+  let sommaEta = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    sommaEta += myArray[i].age;
+  }
+  let etaMedia = sommaEta / myArray.length;
+  return etaMedia;
+}
+
+const media = etaMedia(myArray);
+console.log(media);
