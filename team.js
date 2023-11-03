@@ -73,6 +73,36 @@ let myArray = [
     petName: "Attila",
   },
 ];
+// feature Fabrizio
+function ordinaNomiCognomiAlfabetico(array) {
+    const risultato = array
+      .map(function (persona) {
+        return {
+          name: persona.name,
+          surname: persona.surname,
+        };
+      })
+      .sort(function (a, b) {
+        const nomeA = a.name.toLowerCase();
+        const nomeB = b.name.toLowerCase();
+        const cognomeA = a.surname.toLowerCase();
+        const cognomeB = b.surname.toLowerCase();
+  
+        if (nomeA < nomeB) return -1;
+        if (nomeA > nomeB) return 1;
+  
+        if (cognomeA < cognomeB) return -1;
+        if (cognomeA > cognomeB) return 1;
+  
+        return 0;
+      });
+  
+    return risultato;
+  }
+  
+  const risultatoOrdinato = ordinaNomiCognomiAlfabetico(myArray);
+  
+  console.log(risultatoOrdinato);
 
 // feature Matteo S.
 function findDuplicateNames(arr){
