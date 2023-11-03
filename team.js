@@ -30,11 +30,11 @@ let myArray = [
     age: 26,
     city: "Ravenna",
     hobby: "fotografia",
-    favouriteFood: "",
-    favouriteVideogame: "",
-    favouriteFilm: "",
-    favouriteBook: "",
-    petNam: "Dior",
+    favoriteFood: "",
+    favoriteVideogame: "",
+    favoriteFilm: "",
+    favoriteBook: "",
+    petName: "Dior",
   },
   {
     name: "Raul",
@@ -42,11 +42,11 @@ let myArray = [
     age: 21,
     city: "Roma",
     hobby: "e-Sport",
-    favouriteFood: "Sushi",
-    favouriteVideogame: "Jak and Dexter",
-    favouriteFilm: "Wiplash",
-    favouriteBook: "Uno studio in rosso",
-    petNam: "",
+    favoriteFood: "Sushi",
+    favoriteVideogame: "LOL",
+    favoriteFilm: "Wiplash",
+    favoriteBook: "Uno studio in rosso",
+    petName: "",
   },
   {
     name: "Salvatore",
@@ -74,6 +74,7 @@ let myArray = [
   },
 ];
 
+// feature junela
 let newAge = myArray.map(function (obj) {
   /* con map ho fatto lista, quindi crea un array ordinato */ 
   return obj.age; /*quello che funzione mi deve ritornare */
@@ -85,3 +86,32 @@ console.log(orderedAge);
 /* new age è uguale a valori dopo = */
 
 /* metto tutto in ordine, ritorno valore che voglio, faccio sort e stampo */
+
+// feature Raul
+function playerLOL(myArray) {
+  for (let i = 0; i < myArray.length; i++) {
+    let membri = myArray[i];
+    if (
+      membri.favoriteVideoGame === "LOL" ||
+      membri.favoriteVideoGame === "League Of Legends"
+    ) {
+      console.log(membri.name);
+    }
+  }
+}
+playerLOL (myArray)
+
+// feature Salvatore
+function etaMedia(myArray) {
+  let sommaEta = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    sommaEta += myArray[i].age;
+  }
+  let etaMedia = sommaEta / myArray.length;
+  return etaMedia;
+}
+
+const media = etaMedia(myArray);
+console.log(media);
+
+
