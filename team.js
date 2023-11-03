@@ -102,7 +102,7 @@ function ordinaNomiCognomiAlfabetico(array) {
   
   const risultatoOrdinato = ordinaNomiCognomiAlfabetico(myArray);
   
-  console.log(risultatoOrdinato);
+  console.log("nomi e cognomi ordinati",risultatoOrdinato);
 
 // feature Matteo S.
 function findDuplicateNames(arr){
@@ -122,13 +122,14 @@ function findDuplicateNames(arr){
 
 }
 
- console.log(findDuplicateNames(myArray));
+ console.log("nomi duplicati",findDuplicateNames(myArray));
 
 // feature Matteo L.
 function findOwnerPet (arr){
   for (let i = 0;i<arr.length;i++){
   let obj = arr[i];
   if (obj.name && obj.petName){
+    console.log("owner & pet");
     console.log(obj.name,obj.petName)
   }
   }
@@ -142,7 +143,7 @@ let newAge = myArray.map(function (obj) {
   return obj.age; /*quello che funzione mi deve ritornare */
 });
 let orderedAge = newAge.sort(); /* metto in ordine lista fatta con map */
-console.log(orderedAge);
+console.log("età in ordine",orderedAge);
 
 /* map prende age di ogni oggetto e quello che torna è age di ogni obj dentro oggetto */
 /* new age è uguale a valori dopo = */
@@ -157,7 +158,7 @@ function playerLOL(myArray) {
       membri.favoriteVideoGame === "LOL" ||
       membri.favoriteVideoGame === "League Of Legends"
     ) {
-      console.log(membri.name);
+      console.log("LoL players",membri.name);
     }
   }
 }
@@ -174,7 +175,7 @@ function etaMedia(myArray) {
 }
 
 const media = etaMedia(myArray);
-console.log(media);
+console.log("età media",media);
 
 
 
