@@ -73,20 +73,32 @@ let myArray = [
     petName: "Attila",
   },
 ];
-function alphabeticOrder(array) {
-    for (let i = 0; i < array.length - 1; i++) {
-        for (let j = i + 1; j < array.length; j++) {
-            if (array[i].surname > array[j].surname) {
-                let temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
-            }
-        }
-    }
-}
-
-alphabeticOrder(myArray);
-
-for (let i = 0; i < myArray.length; i++) {
-    console.log(myArray[i].surname);
-}
+function ordinaNomiCognomiAlfabetico(array) {
+    const risultato = array
+      .map(function (persona) {
+        return {
+          name: persona.name,
+          surname: persona.surname,
+        };
+      })
+      .sort(function (a, b) {
+        const nomeA = a.name.toLowerCase();
+        const nomeB = b.name.toLowerCase();
+        const cognomeA = a.surname.toLowerCase();
+        const cognomeB = b.surname.toLowerCase();
+  
+        if (nomeA < nomeB) return -1;
+        if (nomeA > nomeB) return 1;
+  
+        if (cognomeA < cognomeB) return -1;
+        if (cognomeA > cognomeB) return 1;
+  
+        return 0;
+      });
+  
+    return risultato;
+  }
+  
+  const risultatoOrdinato = ordinaNomiCognomiAlfabetico(myArray);
+  
+  console.log(risultatoOrdinato);
