@@ -74,6 +74,18 @@ let myArray = [
   },
 ];
 
+// feature Matteo L.
+function findOwnerPet (arr){
+  for (let i = 0;i<arr.length;i++){
+  let obj = arr[i];
+  if (obj.name && obj.petName){
+    console.log(obj.name,obj.petName)
+  }
+  }
+
+}
+
+findOwnerPet (myArray)
 // feature junela
 let newAge = myArray.map(function (obj) {
   /* con map ho fatto lista, quindi crea un array ordinato */ 
