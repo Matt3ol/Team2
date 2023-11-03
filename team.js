@@ -74,6 +74,20 @@ let myArray = [
   },
 ];
 
+// feature junela
+let newAge = myArray.map(function (obj) {
+  /* con map ho fatto lista, quindi crea un array ordinato */ 
+  return obj.age; /*quello che funzione mi deve ritornare */
+});
+let orderedAge = newAge.sort(); /* metto in ordine lista fatta con map */
+console.log(orderedAge);
+
+/* map prende age di ogni oggetto e quello che torna è age di ogni obj dentro oggetto */
+/* new age è uguale a valori dopo = */
+
+/* metto tutto in ordine, ritorno valore che voglio, faccio sort e stampo */
+
+// feature Raul
 function playerLOL(myArray) {
   for (let i = 0; i < myArray.length; i++) {
     let membri = myArray[i];
@@ -87,6 +101,7 @@ function playerLOL(myArray) {
 }
 playerLOL (myArray)
 
+// feature Salvatore
 function etaMedia(myArray) {
   let sommaEta = 0;
   for (let i = 0; i < myArray.length; i++) {
@@ -98,4 +113,5 @@ function etaMedia(myArray) {
 
 const media = etaMedia(myArray);
 console.log(media);
+
 
