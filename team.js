@@ -55,8 +55,8 @@ let myArray = [
     city: "Licata",
     hobby: "play the guitar",
     favoriteFood: "pizza",
-    favoriteVideoGame:"GTA",
-    favoriteFilm:"Titanic",
+    favoriteVideoGame: "GTA",
+    favoriteFilm: "Titanic",
     favoriteBook: "padre ricco padre povero",
     petName: "Nino",
   },
@@ -74,11 +74,12 @@ let myArray = [
   },
 ];
 
-let newAge = myArray.map (function(obj){ /* con map ho fatto lista, quindi crea un array ordinato */
-  return obj.age /*quello che funzione mi deve ritornare */
+let newAge = myArray.map(function (obj) {
+  /* con map ho fatto lista, quindi crea un array ordinato */ 
+  return obj.age; /*quello che funzione mi deve ritornare */
 });
 let orderedAge = newAge.sort(); /* metto in ordine lista fatta con map */
-console.log (orderedAge);
+console.log(orderedAge);
 
 /* map prende age di ogni oggetto e quello che torna è age di ogni obj dentro oggetto */
 /* new age è uguale a valori dopo = */
