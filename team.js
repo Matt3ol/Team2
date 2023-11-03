@@ -73,3 +73,19 @@ let myArray = [
     petName: "Attila",
   },
 ];
+
+
+function age(myArray){
+  for (let i=0; i<myArray.length; i++){
+    for (let j=i++; j<myArray.length; j++){
+      if (myArray[i].age > myArray[j].age) {
+        let age1=myArray[i].age
+        myArray[i].age = myArray[j].age
+        letage1 = myArray[j].age
+      };
+    };
+  };
+return myArray
+}
+
+console.log(age(myArray));
