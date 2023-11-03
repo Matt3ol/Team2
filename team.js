@@ -43,7 +43,7 @@ let myArray = [
     city: "Roma",
     hobby: "e-Sport",
     favoriteFood: "Sushi",
-    favoriteVideogame: "Jak and Dexter",
+    favoriteVideogame: "LOL",
     favoriteFilm: "Wiplash",
     favoriteBook: "Uno studio in rosso",
     petName: "",
@@ -74,6 +74,19 @@ let myArray = [
   },
 ];
 
+function playerLOL(myArray) {
+  for (let i = 0; i < myArray.length; i++) {
+    let membri = myArray[i];
+    if (
+      membri.favoriteVideoGame === "LOL" ||
+      membri.favoriteVideoGame === "League Of Legends"
+    ) {
+      console.log(membri.name);
+    }
+  }
+}
+playerLOL (myArray)
+
 function etaMedia(myArray) {
   let sommaEta = 0;
   for (let i = 0; i < myArray.length; i++) {
@@ -85,3 +98,4 @@ function etaMedia(myArray) {
 
 const media = etaMedia(myArray);
 console.log(media);
+
